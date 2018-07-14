@@ -1,0 +1,13 @@
+{
+   "browser_action": {
+      "default_icon": "browser_icon.png",
+      "default_title": "Catching Web Requests"
+   },
+   "description": "You can watch all web requests as a list on the current web page and also watch the individual web request by clicking every list.",
+    "icons": { "128": "icon.png" },
+   "name": "Catch Web Requests",
+   "permissions": [ "webNavigation", "tabs", "webRequest", "http://*/*", "https://*/*", "webRequestBlocking", "tabs"],
+   "version": "1.0.0",
+   "manifest_version": 2,
+   "background": { "scripts": ["background.js"] }
+}
